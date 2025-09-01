@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Semester Study Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>📚 Semester Study Tracker</h1>
+  <div style="min-width:220px">
+    <div style="font-size:12px;color:#333;margin-bottom:4px;">Master Progress</div>
+    <div class="master"><div id="masterBar"></div></div>
+  </div>
+</header>
+
+<div class="grid" id="subjects">
+  <!-- ===== CMSC 12 LECTURE ===== -->
+  <section class="subject" data-subject="CMSC 12 Lecture">
+    <h2>CMSC 12 Lecture</h2>
+    <div class="meta"><span class="pill">Weeks 1–17</span></div>
+    <details open>
+      <summary>Topics</summary>
+      <div class="topics">
+        <!-- W1 -->
+        <div class="topic" data-topic="W1: Introduction">
+          <span>W1 (Aug 11–15): Introduction</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" />
+          <button class="remove" title="Remove topic">✕</button>
+        </div>
+        <!-- W2 -->
+        <div class="topic" data-topic="W2: Algorithmic foundations">
+          <span>W2 (Aug 18–22): Algorithmic foundations</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" />
+          <button class="remove">✕</button>
+        </div>
+        <!-- W3 -->
+        <div class="topic" data-topic="W3: Review of programming part 1">
+          <span>W3 (Aug 25–29): A review of programming part 1</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W4 -->
+        <div class="topic" data-topic="W4: Review of programming part 2">
+          <span>W4 (Sep 1–5): A review of programming part 2</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W5 -->
+        <div class="topic" data-topic="W5: Review of programming part 3">
+          <span>W5 (Sep 8–12): A review of programming part 3</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W6 -->
+        <div class="topic" data-topic="W6: Exam 1">
+          <span>W6 (Sep 15–19): EXAM 1</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W7 -->
+        <div class="topic" data-topic="W7: Review of programming part 4">
+          <span>W7 (Sep 22–26): A review of programming part 4</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W8 -->
+        <div class="topic" data-topic="W8: Review cont.">
+          <span>W8 (Sep 29–Oct 3): Review (cont.)</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W9 -->
+        <div class="topic" data-topic="W9: Review part 5">
+          <span>W9 (Oct 6–10): Review part 5</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W10 -->
+        <div class="topic" data-topic="W10: Review part 6">
+          <span>W10 (Oct 13–17): Review part 6</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W11 -->
+        <div class="topic" data-topic="W11: Recursion">
+          <span>W11 (Oct 20–24): Recursion</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W12 -->
+        <div class="topic" data-topic="W12: Exam 2">
+          <span>W12 (Oct 27–31): EXAM 2</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W13 -->
+        <div class="topic" data-topic="W13: Number systems">
+          <span>W13 (Nov 3–7): Number systems</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W14 -->
+        <div class="topic" data-topic="W14: Machine Organization">
+          <span>W14 (Nov 10–14): Machine Organization</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W15 -->
+        <div class="topic" data-topic="W15: Programming Languages">
+          <span>W15 (Nov 17–21): Programming Languages</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W16 -->
+        <div class="topic" data-topic="W16: Operating Systems">
+          <span>W16 (Nov 24–28): Operating Systems</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+        <!-- W17 -->
+        <div class="topic" data-topic="W17: Exam 3">
+          <span>W17 (Dec 1–3): EXAM 3</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date" /><button class="remove">✕</button>
+        </div>
+      </div>
+    </details>
+    <div class="progress"><div></div></div>
+    <div class="add-wrap">
+      <input type="text" placeholder="Add a topic to CMSC 12 Lecture…" />
+      <button class="add">Add topic</button>
+    </div>
+  </section>
+
+  <!-- ===== CMSC 12 LAB ===== -->
+  <section class="subject" data-subject="CMSC 12 Lab">
+    <h2>CMSC 12 Lab</h2>
+    <div class="meta"><span class="pill">Weeks 1–15 (note: some labs miss days)</span></div>
+    <details open><summary>Topics</summary>
+      <div class="topics">
+        <div class="topic" data-topic="W1: Lab Introduction">
+          <span>W1: Introduction</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W2: Intro to Python">
+          <span>W2: Introduction to Python</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W3: Selection">
+          <span>W3: Selection</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W4: Iteration">
+          <span>W4: Iteration</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W5: Functions">
+          <span>W5: Functions & parameters</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W6: Lists & Strings">
+          <span>W6: Data structures — Lists & Strings</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W7: Dictionaries">
+          <span>W7: Data structures — Dictionaries</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W8: Files & import">
+          <span>W8: Files & import</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W9: HTML">
+          <span>W9: HTML</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W10: CSS">
+          <span>W10: CSS</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W11: JS Part 1">
+          <span>W11: JavaScript Part 1</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W12: JS Part 2">
+          <span>W12: JavaScript Part 2</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W13: Project making">
+          <span>W13: Project making</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W14: Project making">
+          <span>W14: Project making</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W15: Presentation">
+          <span>W15: Project presentation</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+      </div>
+    </details>
+    <div class="progress"><div></div></div>
+    <div class="add-wrap"><input type="text" placeholder="Add a topic to CMSC 12 Lab…"/><button class="add">Add topic</button></div>
+  </section>
+
+  <!-- ===== CMSC 56 LECTURE ===== -->
+  <section class="subject" data-subject="CMSC 56 Lecture">
+    <h2>CMSC 56 Lecture</h2>
+    <div class="meta"><span class="pill">Weeks 0–12 (+ exams)</span></div>
+    <details open><summary>Topics</summary>
+      <div class="topics">
+        <div class="topic" data-topic="W0: Orientation; Propositions; Logical Connectives">
+          <span>W0 (Aug 11–14): Orientation; Propositions; Logical Connectives</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W1: Syntax & Semantics; Rules of Inference; Laws of Equivalence">
+          <span>W1 (Aug 18–22): Syntax & Semantics of Propositional Logic; Rules of Inference; Laws of Equivalence</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W2: Truth tables; Chain of equivalence; Chain of reasoning">
+          <span>W2 (Aug 25–29): Truth tables; Chain of equivalence; Chain of reasoning</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W3: Proof by contradiction; Proof by resolution">
+          <span>W3 (Sept 1–5): Proof by contradiction; Proof by resolution</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W4: Open propositions; Quantifiers; Predicate logic; Translating">
+          <span>W4 (Sept 8–12): Open propositions; Quantifiers; Predicate logic; Translating to symbols</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W5: Inference & Equivalence for Quantified; Chain; Resolution">
+          <span>W5 (Sept 15–19): Rules of Inference & Laws of Equivalence for Quantified Statements; Chain of Equivalence; Resolution</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W6: Sets; Membership; Containment; Paradox; Operations; Venn">
+          <span>W6 (Sept 22–26): Sets; Membership; Containment; Russell's Paradox; Operations; Venn Diagrams</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W7: Laws of Set Theory; Methods of Proof">
+          <span>W7 (Sep 29–Oct 3): Laws of Set Theory; Methods of Proof</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exam 1">
+          <span>First Long Exam (Oct 6, 7–9 PM) + Reading Break (Oct 9–11)</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W8: Relations">
+          <span>W8 (Oct 13–17): Relations</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W9: Equivalence/Compatibility; Ops on Relations; Digraphs; Hasse">
+          <span>W9 (Oct 20–24): Equivalence & Compatibility Relations; Operations; Directed Graphs; Hasse Diagrams</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W10: Functions; Induction; Pigeonhole">
+          <span>W10 (Oct 27–31): Functions & Types; Mathematical Induction; Pigeonhole Principle</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exam 2">
+          <span>Second Long Exam (Nov 3, 7–9 PM)</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W11: Matrices">
+          <span>W11 (Nov 3–7): Matrices</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="W12: Solving Linear Systems">
+          <span>W12 (Nov 10–14): Solving Linear Systems</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+      </div>
+    </details>
+    <div class="progress"><div></div></div>
+    <div class="add-wrap"><input type="text" placeholder="Add a topic to CMSC 56 Lecture…"/><button class="add">Add topic</button></div>
+  </section>
+
+  <!-- ===== CMSC 56 LAB ===== -->
+  <section class="subject" data-subject="CMSC 56 Lab">
+    <h2>CMSC 56 Lab</h2>
+    <div class="meta"><span class="pill">Exercises</span></div>
+    <details open><summary>Topics</summary>
+      <div class="topics">
+        <div class="topic" data-topic="Orientation (Lab)">
+          <span>W0: Orientation</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 1: Translation (Prop Logic)">
+          <span>Exer 1: Translation – Propositional Logic</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 2: Rules & Laws">
+          <span>Exer 2: Rules of Inference & Laws of Equivalence</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 3: Proving (Truth Tables/Chains)">
+          <span>Exer 3: Proving (Truth Table, Chain of Reasoning & Equivalence)</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 4: Proof by Contradiction/Resolution">
+          <span>Exer 4: Proof by Contradiction & Resolution</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 5: Translation (Predicate)">
+          <span>Exer 5: Translation – Predicate Logic</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 6: Proving (Predicate)">
+          <span>Exer 6: Proving – Predicate Logic (Reasoning & Resolution)</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 7: Set Theory Intro">
+          <span>Exer 7: Set Theory – Introduction</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 8: Set Theory Proving">
+          <span>Exer 8: Set Theory – Proving</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 9: Relations">
+          <span>Exer 9: Relations</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 10: Functions/Induction/Pigeonhole">
+          <span>Exer 10: Functions, Induction, Pigeonhole</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 11: Matrices">
+          <span>Exer 11: Matrices</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Exer 12: Solving Linear Systems">
+          <span>Exer 12: Solving Linear Systems</span><label><input type="checkbox" data-type="reviewed">Reviewed</label>
+          <label><input type="checkbox" data-type="class">Studied</label><input type="date"/><button class="remove">✕</button>
+        </div>
+      </div>
+    </details>
+    <div class="progress"><div></div></div>
+    <div class="add-wrap"><input type="text" placeholder="Add a topic to CMSC 56 Lab…"/><button class="add">Add topic</button></div>
+  </section>
+
+  <!-- ===== MATH 27 ===== -->
+  <section class="subject" data-subject="MATH 27">
+    <h2>MATH 27</h2>
+    <div class="meta"><span class="pill">Weeks 1–17 (per course guide)</span></div>
+    <details open><summary>Topics</summary>
+      <div class="topics">
+        <!-- W1 -->
+        <div class="topic" data-topic="W1: Class Orientation">
+          <span>W1 (Aug 11–15): Class Orientation; Unit 1 – Limits (definitions & theorems)</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W2 -->
+        <div class="topic" data-topic="W2: One-sided & Infinite Limits">
+          <span>W2 (Aug 18–22): One-sided limits; Infinite limits</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W3 -->
+        <div class="topic" data-topic="W3: Limits at Infinity; Continuity (point & interval)">
+          <span>W3 (Aug 25–29): Limits at Infinity; Continuity at a point; Continuity on an interval (graphs)</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W4 -->
+        <div class="topic" data-topic="W4: Unit 2 – Basic Diff Thms; Chain Rule">
+          <span>W4 (Sept 1–5): Unit 2 – Basic Differentiation Theorems; Chain Rule</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W5 -->
+        <div class="topic" data-topic="W5: Higher Order; Implicit; Trig & Inverse Trig Derivatives">
+          <span>W5 (Sept 8–12): Higher-order derivatives; Implicit differentiation; Derivatives of trig & inverse trig</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W6 -->
+        <div class="topic" data-topic="W6: Log/Exp Derivatives; Logarithmic Diff; L'Hôpital 1">
+          <span>W6 (Sept 15–19): Derivatives of logarithmic & exponential; Logarithmic differentiation; L'Hôpital's Rule 1</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W7 -->
+        <div class="topic" data-topic="W7: L'Hôpital 2; Optimization">
+          <span>W7 (Sept 22–26): L'Hôpital's Rule 2; Optimization</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W8 -->
+        <div class="topic" data-topic="W8: Related Rates; Curve Sketching (supp)">
+          <span>W8 (Sept 29–Oct 3): Related Rates; *Curve Sketching (supplementary)*</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W9: Midterm/Break -->
+        <div class="topic" data-topic="Midterm Exam / Reading Break">
+          <span>Oct 6: MIDTERM (Units 1–2 incl. applications), 7–9 PM • Oct 9–11: Reading Break</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W10 -->
+        <div class="topic" data-topic="W10: Unit 3 – Basic Integration; Chain Rule for Anti-diff; Trig Integrals">
+          <span>W10 (Oct 13–17): Unit 3 – Integration of basic algebraic; Chain rule for antidiff; Trig integrals</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W11 -->
+        <div class="topic" data-topic="W11: Inverse Trig; Log; Exponential Integrals">
+          <span>W11 (Oct 20–24): Integrals yielding inverse trig; logarithmic; exponential functions</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W12 -->
+        <div class="topic" data-topic="W12: Integration by Parts">
+          <span>W12 (Oct 27–31): Integration by Parts</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W13 -->
+        <div class="topic" data-topic="W13: Trig Sub; Partial Fractions I">
+          <span>W13 (Nov 3–7): Trig substitution; Partial Fractions I</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W14 -->
+        <div class="topic" data-topic="W14: Partial Fractions II; Improper Integrals">
+          <span>W14 (Nov 10–14): Partial Fractions II; Improper Integrals</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W15 -->
+        <div class="topic" data-topic="W15: Area of a Plane Region; Vol of Solid of Revolution I">
+          <span>W15 (Nov 17–21): Area of a plane region; Volume of a solid of revolution I</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W16 -->
+        <div class="topic" data-topic="W16: Vol of Solid II; Centroid of a Plane Region">
+          <span>W16 (Nov 24–28): Volume of a solid of revolution II; Centroid of a plane region</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Prefinal Exam">
+          <span>Dec 1: PREFINAL EXAM (Applications of derivative; Unit 3 up to solids of revolution)</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <!-- W17 optional -->
+        <div class="topic" data-topic="W17: Optional – Centroid of Solid; Arc Length; Surface Area">
+          <span>W17 (Dec 1–3): *Optional* Centroid of a solid; Arc length; Surface area of revolution</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+        <div class="topic" data-topic="Final Exam">
+          <span>Dec 5–12: FINAL EXAM</span>
+          <label><input type="checkbox" data-type="reviewed">Reviewed</label><label><input type="checkbox" data-type="class">Studied</label>
+          <input type="date"/><button class="remove">✕</button>
+        </div>
+      </div>
+    </details>
+    <div class="progress"><div></div></div>
+    <div class="add-wrap"><input type="text" placeholder="Add a topic to MATH 27…"/><button class="add">Add topic</button></div>
+  </section>
+
+  <!-- ===== PLACEHOLDER SUBJECTS (you can add topics directly) ===== -->
+  <section class="subject" data-subject="ETHICS 1">
+    <h2>ETHICS 1</h2>
+    <div class="meta"><span class="pill">Placeholder • add topics anytime</span></div>
+    <details open><summary>Topics</summary><div class="topics"></div></details>
+    <div class="progress"><div></div></div>
+    <div class="add-wrap"><input type="text" placeholder="Add a topic to ETHICS 1…"/><button class="add">Add topic</button></div>
+  </section>
+
+  <section class="subject" data-subject="STS 1">
+    <h2>STS 1</h2>
+    <div class="meta"><span class="pill">Placeholder • add topics anytime</span></div>
+    <details open><summary>Topics</summary><div class="topics"></div></details>
+    <div class="progress"><div></div></div>
+    <div class="add-wrap"><input type="text" placeholder="Add a topic to STS 1…"/><button class="add">Add topic</button></div>
+  </section>
+
+  <section class="subject" data-subject="HK 11">
+    <h2>HK 11</h2>
+    <div class="meta"><span class="pill">Placeholder • add topics anytime</span></div>
+    <details open><summary>Topics</summary><div class="topics"></div></details>
+    <div class="progress"><div></div></div>
+    <div class="add-wrap"><input type="text" placeholder="Add a topic to HK 11…"/><button class="add">Add topic</button></div>
+  </section>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
