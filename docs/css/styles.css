@@ -1,4 +1,4 @@
-:root{
+:root {
   --bg1:#a1c4fd; 
   --bg2:#c2e9fb;
   --card:rgba(255,255,255,.96);
@@ -179,3 +179,4 @@ details[open] summary::before {
   padding:2px 8px; 
   border-radius:999px;
 }
+
